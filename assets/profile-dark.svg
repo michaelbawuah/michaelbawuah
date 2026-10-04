@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">MBA~Steins — Michael Baffour Awuah</title>
+  <desc id="description">Cornell Engineering student building AI/ML systems and software. A compact neon console with a custom coding emblem.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1000" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1524"/>
+      <stop offset=".55" stop-color="#080D17"/>
+      <stop offset="1" stop-color="#13152C"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="30" y1="0" x2="970" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55E2E7" stop-opacity=".72"/>
+      <stop offset=".5" stop-color="#26334A" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#A393FF" stop-opacity=".72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="44" y1="90" x2="444" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76F4E8"/>
+      <stop offset=".48" stop-color="#8ACBFF"/>
+      <stop offset="1" stop-color="#BBA6FF"/>
+    </linearGradient>
+    <linearGradient id="symbol" x1="772" y1="126" x2="918" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#64E5E8"/>
+      <stop offset="1" stop-color="#B49CFF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(846 170) rotate(90) scale(119 140)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#547BDB" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#547BDB" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#91ABD5" stroke-opacity=".035"/>
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="998" height="308" rx="19"/></clipPath>
+  </defs>
+  <style>
+    .cursor { animation: cursor 2s steps(2, end) infinite; }
+    .signal { animation: signal 5s ease-in-out infinite; }
+    @keyframes cursor { 0%, 45%, 100% { opacity: 1; } 50%, 95% { opacity: .18; } }
+    @keyframes signal { 0%, 100% { opacity: .38; } 50% { opacity: .95; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .signal { animation: none; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="310" fill="url(#surface)"/>
+    <rect width="1000" height="310" fill="url(#grid)"/>
+    <rect width="1000" height="54" fill="#FFFFFF" fill-opacity=".025"/>
+    <path d="M0 54H1000" stroke="#8BA3CB" stroke-opacity=".13"/>
+    <g transform="translate(31 27)">
+      <circle r="4" fill="#FF7F8B" fill-opacity=".75"/>
+      <circle cx="15" r="4" fill="#F5C66E" fill-opacity=".75"/>
+      <circle cx="30" r="4" fill="#6ED8A8" fill-opacity=".75"/>
+    </g>
+    <text x="83" y="32" fill="#8B9BB5" font-family="'DejaVu Sans Mono', monospace" font-size="12">michaelbawuah / profile</text>
+    <path d="M737 27H758" stroke="#698399" stroke-opacity=".55"/>
+    <text x="774" y="32" fill="#A4B3CA" font-family="'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1.1">CORNELL ENGINEERING</text>
+
+    <text x="44" y="99" fill="#9BADCB" font-family="'DejaVu Sans Mono', monospace" font-size="12" letter-spacing="2">HELLO, WORLD.</text>
+    <text x="40" y="159" fill="url(#accent)" font-family="'DejaVu Sans', Arial, sans-serif" font-size="53" font-weight="700" letter-spacing="-2.1">MBA~Steins</text>
+    <text x="44" y="198" fill="#E6ECF7" font-family="'DejaVu Sans', Arial, sans-serif" font-size="22" letter-spacing=".1">Michael Baffour Awuah</text>
+    <text x="44" y="231" fill="#A6B5CD" font-family="'DejaVu Sans Mono', monospace" font-size="14">AI / ML SYSTEMS + SOFTWARE ENGINEERING</text>
+    <path d="M44 265L50 270L44 275" stroke="#70DDD9" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="275" fill="#8394B0" font-family="'DejaVu Sans Mono', monospace" font-size="12">Build deeply. Make it useful.</text>
+    <rect class="cursor" x="286" y="264" width="7" height="13" rx="1" fill="#70DDD9"/>
+
+    <ellipse cx="846" cy="170" rx="145" ry="120" fill="url(#halo)"/>
+    <g stroke="#7D94C0" stroke-opacity=".15" stroke-width="1">
+      <path d="M703 119H741L759 137H777"/>
+      <path d="M955 111H925L907 129H888"/>
+      <path d="M713 224H751L768 207H790"/>
+      <path d="M953 229H925L908 212H887"/>
+      <path d="M841 87V106M841 237V256"/>
+      <rect x="752" y="85" width="184" height="168" rx="24" stroke-dasharray="3 8"/>
+    </g>
+    <g stroke="url(#symbol)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M793 143L772 169L793 195M896 143L917 169L896 195" stroke-width="4"/>
+      <path d="M810 178C826 148 840 148 854 169C868 190 880 189 894 160" stroke-width="4"/>
+      <path d="M817 215H873" stroke-width="1.4" opacity=".35"/>
+    </g>
+    <g class="signal" fill="#71DFE6">
+      <circle cx="703" cy="119" r="2.5"/>
+      <circle cx="713" cy="224" r="2.5"/>
+      <circle cx="841" cy="87" r="2.5"/>
+    </g>
+    <g class="signal" fill="#B59FFB" style="animation-delay: -2.5s">
+      <circle cx="955" cy="111" r="2.5"/>
+      <circle cx="953" cy="229" r="2.5"/>
+      <circle cx="841" cy="256" r="2.5"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="998" height="308" rx="19" stroke="url(#edge)" stroke-width="1.5"/>
+</svg>
