@@ -15,8 +15,6 @@
 
 I'm **Michael**, a **Cornell Engineering** student building AI/ML systems and useful software—from deep-learning internals to deployed products.
 
-Previously a **Microsoft Software Engineer Intern**, working on AI observability and agent evaluation.
-
 ### Selected work
 
 | Project | In brief |
@@ -27,4 +25,16 @@ Previously a **Microsoft Software Engineer Intern**, working on AI observability
 | **[ToolRet](https://github.com/michaelbawuah/toolret-hybrid-retrieval)** | Retrieval research on when to rerank, evaluated over 37,292 tools. |
 | **[MarketLab](https://github.com/michaelbawuah/MarketLab)** | Portfolio planning and reproducible backtests with exact accounting and independent verification. |
 
-**Working with:** `Python` · `C/C++` · `TypeScript` · `Java` · `Go` · `SQL` · `PyTorch` · `Docker`
+**Working with**
+
+<p>
+  <img src="./assets/tech/python.svg" width="64" height="80" alt="Python" title="Python">
+  <img src="./assets/tech/c.svg" width="64" height="80" alt="C" title="C">
+  <img src="./assets/tech/cpp.svg" width="64" height="80" alt="C++" title="C++">
+  <img src="./assets/tech/typescript.svg" width="64" height="80" alt="TypeScript" title="TypeScript">
+  <img src="./assets/tech/java.svg" width="64" height="80" alt="Java" title="Java">
+  <img src="./assets/tech/go.svg" width="64" height="80" alt="Go" title="Go">
+  <img src="./assets/tech/sql.svg" width="64" height="80" alt="SQL" title="SQL">
+  <img src="./assets/tech/pytorch.svg" width="64" height="80" alt="PyTorch" title="PyTorch">
+  <img src="./assets/tech/docker.svg" width="64" height="80" alt="Docker" title="Docker">
+</p>

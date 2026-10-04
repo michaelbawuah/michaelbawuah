@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" fill="none" role="img" aria-labelledby="title description">
   <title id="title">MBA~Steins — Michael Baffour Awuah</title>
-  <desc id="description">Cornell Engineering student building AI/ML systems and software. A compact neon console with a custom coding emblem.</desc>
+  <desc id="description">Cornell Engineering student building AI/ML systems and software. A compact console with a floating, isometric coding chip in cyan and violet.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1000" y2="310" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0E1524"/>
@@ -29,13 +29,32 @@
       <path d="M28 0H0V28" stroke="#91ABD5" stroke-opacity=".035"/>
     </pattern>
     <clipPath id="frame"><rect x="1" y="1" width="998" height="308" rx="19"/></clipPath>
+
+    <linearGradient id="base-plane" x1="715" y1="168" x2="942" y2="266" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#152A42"/><stop offset="1" stop-color="#27213F"/>
+    </linearGradient>
+    <linearGradient id="middle-plane" x1="730" y1="136" x2="940" y2="223" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D3C51"/><stop offset="1" stop-color="#302849"/>
+    </linearGradient>
+    <linearGradient id="chip-plane" x1="0" y1="0" x2="116" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#245463"/><stop offset="1" stop-color="#443961"/>
+    </linearGradient>
+    <linearGradient id="chip-edge" x1="740" y1="125" x2="934" y2="205" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79F1ED"/><stop offset="1" stop-color="#C4ABFF"/>
+    </linearGradient>
+    <radialGradient id="ground-shadow">
+      <stop stop-color="#020611" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#020611" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <style>
     .cursor { animation: cursor 2s steps(2, end) infinite; }
     .signal { animation: signal 5s ease-in-out infinite; }
+    .chip { animation: float 7s ease-in-out infinite; }
     @keyframes cursor { 0%, 45%, 100% { opacity: 1; } 50%, 95% { opacity: .18; } }
     @keyframes signal { 0%, 100% { opacity: .38; } 50% { opacity: .95; } }
-    @media (prefers-reduced-motion: reduce) { .cursor, .signal { animation: none; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .signal, .chip { animation: none; } }
   </style>
   <g clip-path="url(#frame)">
     <rect width="1000" height="310" fill="url(#surface)"/>
@@ -59,29 +78,71 @@
     <text x="62" y="275" fill="#8394B0" font-family="'DejaVu Sans Mono', monospace" font-size="12">Build deeply. Make it useful.</text>
     <rect class="cursor" x="286" y="264" width="7" height="13" rx="1" fill="#70DDD9"/>
 
-    <ellipse cx="846" cy="170" rx="145" ry="120" fill="url(#halo)"/>
-    <g stroke="#7D94C0" stroke-opacity=".15" stroke-width="1">
-      <path d="M703 119H741L759 137H777"/>
-      <path d="M955 111H925L907 129H888"/>
-      <path d="M713 224H751L768 207H790"/>
-      <path d="M953 229H925L908 212H887"/>
-      <path d="M841 87V106M841 237V256"/>
-      <rect x="752" y="85" width="184" height="168" rx="24" stroke-dasharray="3 8"/>
+    <!-- Isometric planes, shaded faces, and a gently floating coding chip. -->
+    <ellipse cx="837" cy="190" rx="160" ry="120" fill="url(#halo)"/>
+    <ellipse cx="840" cy="276" rx="148" ry="24" fill="url(#ground-shadow)"/>
+    <g stroke="#839DC9" stroke-opacity=".20" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M680 180H708L731 167M903 105L926 92H962M943 249H970M706 256H738L756 246"/>
+      <path d="M753 97L790 76H874L905 94" stroke-dasharray="3 7"/>
     </g>
-    <g stroke="url(#symbol)" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M793 143L772 169L793 195M896 143L917 169L896 195" stroke-width="4"/>
-      <path d="M810 178C826 148 840 148 854 169C868 190 880 189 894 160" stroke-width="4"/>
-      <path d="M817 215H873" stroke-width="1.4" opacity=".35"/>
+
+    <!-- Bottom deck. -->
+    <path d="M698 206L837 285V292L698 213Z" fill="#0C1A2B"/>
+    <path d="M837 285L976 206V213L837 292Z" fill="#252541"/>
+    <path d="M698 206L837 127L976 206L837 285Z" fill="url(#base-plane)" stroke="url(#chip-edge)" stroke-opacity=".28"/>
+    <g stroke="url(#chip-edge)" stroke-width="1" stroke-opacity=".32" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M722 207L837 272L951 207M748 201L784 221V232L817 251M926 208L890 228V239L857 258"/>
+      <path d="M708 208L837 281L966 208" stroke-opacity=".18"/>
     </g>
-    <g class="signal" fill="#71DFE6">
-      <circle cx="703" cy="119" r="2.5"/>
-      <circle cx="713" cy="224" r="2.5"/>
-      <circle cx="841" cy="87" r="2.5"/>
+
+    <!-- Suspended middle deck. -->
+    <path d="M713 180L837 250V260L713 190Z" fill="#122A3D"/>
+    <path d="M837 250L961 180V190L837 260Z" fill="#352A52"/>
+    <path d="M713 180L837 110L961 180L837 250Z" fill="url(#middle-plane)" stroke="url(#chip-edge)" stroke-opacity=".38"/>
+    <path d="M730 180L837 119L944 180L837 241Z" stroke="url(#chip-edge)" stroke-opacity=".28"/>
+    <g stroke="url(#chip-edge)" stroke-width="2" stroke-linecap="round" opacity=".50">
+      <path d="M732 186L746 194M750 196L764 204M768 207L782 215M786 217L800 225"/>
+      <path d="M875 226L889 218M893 216L907 208M911 205L925 197M929 194L943 186"/>
     </g>
-    <g class="signal" fill="#B59FFB" style="animation-delay: -2.5s">
-      <circle cx="955" cy="111" r="2.5"/>
-      <circle cx="953" cy="229" r="2.5"/>
-      <circle cx="841" cy="256" r="2.5"/>
+    <path d="M750 211L817 249" stroke="#79F1ED" stroke-opacity=".65" stroke-linecap="round"/>
+    <path d="M857 249L924 211" stroke="#C4ABFF" stroke-opacity=".65" stroke-linecap="round"/>
+
+    <!-- Top chip; the symbol is projected onto its square surface. -->
+    <g class="chip">
+      <path d="M740 146L837 201V217L740 162Z" fill="#133644"/>
+      <path d="M837 201L934 146V162L837 217Z" fill="#3C2D5A"/>
+      <path d="M741 162L837 216L933 162" stroke="url(#chip-edge)" stroke-opacity=".48"/>
+      <g transform="matrix(.8362069 .4741379 -.8362069 .4741379 837 91)">
+        <rect width="116" height="116" fill="url(#chip-plane)"/>
+        <rect x=".8" y=".8" width="114.4" height="114.4" stroke="#D9F9FF" stroke-opacity=".32" stroke-width="1.1"/>
+        <rect x="10" y="10" width="96" height="96" rx="5" stroke="#D9F9FF" stroke-opacity=".15"/>
+        <g stroke="#D9F9FF" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M42 40L27 58L42 76M74 40L89 58L74 76"/>
+          <path d="M48 63C53 48 60 48 65 58C70 68 75 67 79 54" stroke-width="3.7"/>
+        </g>
+        <path d="M43 93H73" stroke="#D9F9FF" stroke-opacity=".35" stroke-linecap="round"/>
+        <circle cx="15" cy="15" r="2" fill="#79F1ED"/>
+        <circle cx="101" cy="101" r="2" fill="#C4ABFF"/>
+      </g>
+      <path d="M740 146L837 91L934 146L837 201Z" stroke="url(#chip-edge)" stroke-opacity=".60" stroke-width="1.2"/>
+      <path d="M763 166L822 199" stroke="#79F1ED" stroke-opacity=".72" stroke-width="2" stroke-linecap="round"/>
+      <path d="M854 199L913 166" stroke="#C4ABFF" stroke-opacity=".72" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Two small satellites carry the same lighting and perspective. -->
+    <g>
+      <path d="M945 109L959 117V133L945 125Z" fill="#122A3D"/>
+      <path d="M959 117L973 109V125L959 133Z" fill="#352A52"/>
+      <path d="M945 109L959 101L973 109L959 117Z" fill="#1D3C51" stroke="#79F1ED" stroke-opacity=".5"/>
+      <path d="M683 137L694 143V156L683 150Z" fill="#133644"/>
+      <path d="M694 143L705 137V150L694 156Z" fill="#3C2D5A"/>
+      <path d="M683 137L694 131L705 137L694 143Z" fill="#302849" stroke="#C4ABFF" stroke-opacity=".5"/>
+    </g>
+    <g class="signal">
+      <circle cx="680" cy="180" r="2.5" fill="#79F1ED"/>
+      <circle cx="962" cy="92" r="2.5" fill="#79F1ED"/>
+      <circle cx="970" cy="249" r="2.5" fill="#C4ABFF"/>
+      <circle cx="706" cy="256" r="2.5" fill="#C4ABFF"/>
     </g>
   </g>
   <rect x="1" y="1" width="998" height="308" rx="19" stroke="url(#edge)" stroke-width="1.5"/>

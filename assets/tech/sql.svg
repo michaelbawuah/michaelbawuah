@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" role="img" aria-labelledby="title">
+  <title id="title">SQL</title>
+  <!-- Generic SQL database symbol, drawn for this profile. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="64" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142235"/><stop offset="1" stop-color="#1C2036"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="76" rx="12" fill="url(#tile)" stroke="#879BBE" stroke-opacity=".25"/>
+  <g fill="none" stroke="#8FCFEE" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 20V43C17 47 47 47 47 43V20" fill="#19384D"/>
+    <ellipse cx="32" cy="20" rx="15" ry="5" fill="#26536D"/>
+    <path d="M17 28C17 34.7 47 34.7 47 28M17 36C17 42.7 47 42.7 47 36"/>
+  </g>
+  <text x="32" y="65" text-anchor="middle" fill="#D8E2F1" font-family="'DejaVu Sans', Arial, sans-serif" font-size="9.5" font-weight="500">SQL</text>
+</svg>

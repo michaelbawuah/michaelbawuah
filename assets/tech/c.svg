@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" role="img" aria-labelledby="title">
+  <title id="title">C</title>
+  <!-- C logo from devicons/devicon (MIT); see DEVICON-LICENSE.txt. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="64" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142235"/><stop offset="1" stop-color="#1C2036"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="76" rx="12" fill="url(#tile)" stroke="#879BBE" stroke-opacity=".25"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" x="13" y="10" width="38" height="38"><path fill="#a9bacd" d="M125 50c-4-32-24-50-62-50C29 0 3 24 3 64c0 39 24 64 64 64 32 0 55-19 58-50H87c-2 11-8 20-20 20-21 0-24-16-24-33 0-23 8-35 22-35 13 0 20 7 22 20z" /></svg>
+  <text x="32" y="65" text-anchor="middle" fill="#D8E2F1" font-family="'DejaVu Sans', Arial, sans-serif" font-size="9.5" font-weight="500">C</text>
+</svg>
