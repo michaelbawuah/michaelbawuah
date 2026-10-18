@@ -13,23 +13,30 @@
   <a href="https://navox.net">Try NavoX ↗</a>
 </p>
 
-I'm **Michael**, a **Cornell Engineering** student working on C++ systems, machine learning, and algorithms.
+I'm **Michael**, an **Electrical & Computer Engineering student at Cornell University**. I build **high-performance C++ systems, ML infrastructure, developer tools, and reproducible research**. What interests me most is making software both fast *and* explainable: clear invariants, useful tests, careful measurements, and a product people can actually run.
 
-### Selected work
+### Selected engineering work
 
-| Project | In brief |
-| --- | --- |
-| **[Ledger](https://github.com/michaelbawuah/Ledger)** | C++23 limit order book and matching engine: price-time priority, allocation-free order processing, differential tests, and latency studies. |
-| **[Gatehaven](https://github.com/michaelbawuah/Gatehaven)** | C++23/SDL3 circuit sandbox with compiled circuit graphs, binary save files, and downloadable previews for macOS, Linux, and Windows. |
-| **[NavoX](https://github.com/michaelbawuah/NavoX)** | Personal AI assistant with voice, connected accounts, a Chrome side panel, and OpenAI, Claude, and Gemini adapters. |
-| **[Fluxion](https://github.com/michaelbawuah/Fluxion)** | Deep-learning engine from scratch: tensors, autograd, transformers, and native C++/BLAS operators. |
-| **[ModelForge](https://github.com/michaelbawuah/ModelForge)** | Model registry and inference platform with versioned artifacts, progressive releases, and rollback. |
-| **[ToolRet](https://github.com/michaelbawuah/toolret-hybrid-retrieval)** | Retrieval research on when to rerank, evaluated over 37,292 tools. |
-| **[MarketLab](https://github.com/michaelbawuah/MarketLab)** | Portfolio planning and reproducible backtests with exact accounting and independent verification. |
-| **[Pro Competitive Programming](https://github.com/michaelbawuah/Pro-Competitive-Programming)** | 835 C++17 reference implementations with algorithm notes, local test fixtures, and reusable data structures. |
-| **[LeetCode Atlas](https://github.com/michaelbawuah/LeetCode_Atlas)** | Python and C++ algorithm implementations organized by problem-solving pattern. |
+| Project | What I built | Start here |
+| --- | --- | --- |
+| **[Ledger](https://github.com/michaelbawuah/Ledger)** · C++23 systems | Allocation-free limit order book with price-time priority and lock-free SPSC handoff. **18.74M synthetic commands/s, 271 ns p99** on an AMD EPYC virtual host; **100M differential commands** verified. | [Design](https://github.com/michaelbawuah/Ledger/blob/main/docs/design.md) · [Benchmarks](https://github.com/michaelbawuah/Ledger/blob/main/docs/performance-study.md) |
+| **[Gatehaven](https://github.com/michaelbawuah/Gatehaven)** · C++23/SDL3 | Compiled circuit simulation, native desktop editor, binary saves, and downloadable **macOS, Windows, and Linux** development previews. | [Try a preview](https://github.com/michaelbawuah/Gatehaven/releases/tag/v0.5.0-preview.1) · [Build](https://github.com/michaelbawuah/Gatehaven/blob/main/docs/building.md) |
+| **[NavoX](https://github.com/michaelbawuah/NavoX)** · AI product | Personal assistant connecting inbox, calendar, and student workflows, with source-linked answers and review before external actions. Student-specific features are actively being developed. | [Live site](https://navox.net) · [Architecture](https://github.com/michaelbawuah/NavoX#architecture) |
+| **[Fluxion](https://github.com/michaelbawuah/Fluxion)** · ML systems | From-scratch NumPy tensor engine, reverse-mode autodiff, GPT-style transformer, gradient checks, and optional C++/BLAS and experimental CUDA operators. | [Architecture](https://github.com/michaelbawuah/Fluxion#how-it-works) · [Measurements](https://github.com/michaelbawuah/Fluxion#measured-behavior) |
+| **[ToolRet](https://github.com/michaelbawuah/toolret-hybrid-retrieval)** · Retrieval research | Conditional reranking over **37,292 tools**. On **1,500 untouched queries**, the primary router made **23.4% fewer cross-encoder calls** while meeting the preregistered nDCG loss tolerance. | [Research paper](https://github.com/michaelbawuah/toolret-hybrid-retrieval/blob/main/paper/tool_disjoint_reranking_study_20261003.md) |
+| **[Disclosure Drift](https://github.com/michaelbawuah/Disclosure-drift)** · Quant research | Source-audited SEC 10-K risk-disclosure study: **215 filings** and **180 year-over-year comparisons**. Descriptive pilot results are reproducible; the proposed return-forecasting study is **not yet validated**. | [Methods & findings](https://github.com/michaelbawuah/Disclosure-drift/blob/main/docs/sec_only_descriptive_study.md) |
 
-For a closer look at the engineering: [Ledger’s design and trade-offs](https://github.com/michaelbawuah/Ledger/blob/main/docs/design.md), [Gatehaven’s build guide](https://github.com/michaelbawuah/Gatehaven/blob/main/docs/building.md), and [the algorithms collection](https://github.com/michaelbawuah/Pro-Competitive-Programming).
+### How I approach engineering
+
+- **Correctness first:** [independent reference-model checks](https://github.com/michaelbawuah/Ledger/blob/main/docs/reproducibility.md), [autograd tests](https://github.com/michaelbawuah/Fluxion/blob/main/tests/test_autograd.py), and explicit edge cases.
+- **Measurements with context:** [controlled performance workloads](https://github.com/michaelbawuah/Ledger/blob/main/docs/performance-study.md) and [held-out evaluation](https://github.com/michaelbawuah/toolret-hybrid-retrieval/blob/main/docs/confirmation_reproduction.md), including unfavorable results.
+- **Build it so people can use it:** [cross-platform Gatehaven previews](https://github.com/michaelbawuah/Gatehaven/releases/tag/v0.5.0-preview.1), [NavoX walkthrough](https://github.com/michaelbawuah/NavoX#see-it-in-action), and runnable local examples.
+
+### Background
+
+My path into software includes **Harvard CS50**, **Springboard software training**, and hands-on programming practice. Since starting **Electrical & Computer Engineering at Cornell in 2024**, I've studied data structures, digital logic, computer systems, architecture, networks, databases, and machine learning. Those foundations inform the newer public systems and research repositories above.
+
+I also maintain **[ModelForge](https://github.com/michaelbawuah/ModelForge)** (model versioning and canary deployment), **[MarketLab](https://github.com/michaelbawuah/MarketLab)** (portfolio analytics), **[Pro Competitive Programming](https://github.com/michaelbawuah/Pro-Competitive-Programming)** (835 C++ reference implementations with local verification), and **[LeetCode Atlas](https://github.com/michaelbawuah/LeetCode_Atlas)** (pattern-based Python/C++ interview practice).
 
 **Working with**
 
